@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  </div>
+  
+    <table>
+    <thead>
+      <tr>
+        <th *ngFor="let heading of header" ng-click="sort(heading)" >
+          {{heading}}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let eachperson of data" >
+        <td>{{eachperson.id }}</td>
+        <td>{{eachperson.name }}</td>
+        <td>{{eachperson.DOB }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <app-add-button> </app-add-button>
+ 
+
